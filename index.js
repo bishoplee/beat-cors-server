@@ -8,7 +8,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/medixx', (req, res) => {
+app.get('api/medixx', (req, res) => {
   request(
     { url: 'https://www.covidvisualizer.com/api' },
     (error, response, body) => {
